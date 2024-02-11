@@ -1,8 +1,8 @@
-import * as PIXI from "pixi.js";
-import { KawaseBlurFilter } from "@pixi/filter-kawase-blur";
-import SimplexNoise from "simplex-noise";
-import hsl from "hsl-to-hex";
-import debounce from "debounce";
+import pixiJs from 'https://cdn.skypack.dev/pixi.js';
+import pixiFilterKawaseBlur from 'https://cdn.skypack.dev/@pixi/filter-kawase-blur';
+import simplexNoise from 'https://cdn.skypack.dev/simplex-noise';
+import hslToHex from 'https://cdn.skypack.dev/hsl-to-hex';
+import debounce from 'https://cdn.skypack.dev/debounce';
 
 // return a random number within a range
 function random(min, max) {
