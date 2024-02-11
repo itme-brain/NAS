@@ -1,8 +1,8 @@
-import * as PIXI from "./node_modules/pixi.js";
-import { KawaseBlurFilter } from "./node_modules/@pixi/filter-kawase-blur";
-import SimplexNoise from "./node_modules/simplex-noise";
-import hsl from "./node_modules/hsl-to-hex";
-import debounce from "./node_modules/debounce";
+import * as PIXI from "pixi.js";
+import { KawaseBlurFilter } from "@pixi/filter-kawase-blur";
+import SimplexNoise from "simplex-noise";
+import hsl from "hsl-to-hex";
+import debounce from "debounce";
 
 // return a random number within a range
 function random(min, max) {
