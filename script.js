@@ -3,6 +3,7 @@ import { KawaseBlurFilter } from '@pixi/filter-kawase-blur';
 import SimplexNoise from 'simplex-noise';
 import hsl from 'hsl-to-hex';
 import debounce from 'debounce';
+import './css/style.css';
 
 // return a random number within a range
 function random(min, max) {
@@ -215,14 +216,3 @@ if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
     orb.render();
   });
 }
-
-document
-  .querySelector(".overlay__btn--colors")
-  .addEventListener("click", () => {
-    colorPalette.setColors();
-    colorPalette.setCustomProperties();
-
-    orbs.forEach((orb) => {
-      orb.fill = colorPalette.randomColor();
-    });
-  });
